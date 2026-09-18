@@ -12,18 +12,8 @@ interface SwimmingDuckProps {
   onDuckWaddle?: (duckRect: DOMRect) => void;
 }
 
-const DUCK_DIALOGUES = [
-  '♪ Kwek kwek, asyiknya berenang di laut lepas ~',
-  'Air lautnya segar banget hari ini!',
-  'Tadi kulihat si kepiting lagi pemanasan servis di lapangan voli pasir!',
-  'Si kepiting kalau main voli smash-nya pakai capit, curang tapi jago kwek!',
-  'Burung camar jadi wasit voli di atas, tapi awas suka nyamber bola!',
-  'Kepiting! Habis latihan voli pantai jangan lupa nyebur renang bareng di sini!',
-  'Lapangan voli pasir di samping lagi rame turnamen kepiting!',
-  'Kwek! Kalau ada bug di kode, suruh ngobrol sama bebek karet!',
-  'Berenang santai sambil nemenin kamu lihat portofolio Moch Luthfy Naufal ~',
-  'Ombaknya tenang banget, cocok buat santai di pantai!',
-  'Awas kecipratan air ya kalau aku lagi ngebut berenang!'
+const DUCK_DIALOGUES: string[] = [
+  // Isi dialog di sini
 ];
 
 const createShuffledDeck = (items: string[], lastItem?: string): string[] => {

@@ -2,18 +2,18 @@ import type { ProfileData, Project, TechItem, ExperienceItem } from '../types/po
 
 export const profileData: ProfileData = {
   name: 'Moch Luthfy Naufal',
-  tagline: 'Full-Stack & Mobile Developer',
+  tagline: 'Frontend Web Developer',
   education: 'Teknik Informatika (S1) • Universitas Widyatama',
   status: 'Available for Engineering Roles & Projects',
-  bio: 'Informatics engineering undergraduate focused on building end-to-end web platforms and mobile applications with resilient architecture, clean code, and Linux-driven workflows.',
+  bio: 'Informatics engineering undergraduate focused on building modern, responsive, and performant web interfaces with clean component architecture and reactive design.',
   experienceStart: 'Active Developer',
   avatarUrl: '/avatar.svg',
   interests: [
-    'Web Architecture',
-    'Mobile Systems',
-    'Linux Ecosystem',
-    'Software Reliability',
-    'Reactive Interfaces'
+    'Frontend Architecture',
+    'Modern Web Ecosystem',
+    'Component Engineering',
+    'Reactive Interfaces',
+    'Web Performance'
   ],
   contact: {
     email: 'naufalfii74@gmail.com',
