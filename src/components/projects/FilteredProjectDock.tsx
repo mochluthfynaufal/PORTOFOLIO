@@ -59,7 +59,7 @@ export const FilteredProjectDock: React.FC<FilteredProjectDockProps> = ({
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-3">
           <div>
             <span className="text-[10px] sm:text-xs font-mono font-black uppercase tracking-wider text-[#0f172a] bg-[#fde047] px-2 py-0.5 sm:px-3 sm:py-0.5 rounded-lg border-2 border-[#0f172a] shadow-[2px_2px_0px_#0f172a] inline-block mb-1">
-              04 // INDEKS PORTOFOLIO
+              INDEKS PORTOFOLIO
             </span>
             <h3 className="text-lg sm:text-2xl font-black text-white sm:text-[#0f172a] tracking-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)] sm:drop-shadow-none">
               Eksplorasi Proyek &amp; Hasil Rekayasa
@@ -82,20 +82,18 @@ export const FilteredProjectDock: React.FC<FilteredProjectDockProps> = ({
                       cat.id === 'all' ? projects : projects.filter((p) => p.category === cat.id);
                     if (nextFiltered[0]) setActiveProjectId(nextFiltered[0].id);
                   }}
-                  className={`flex items-center justify-center gap-1.5 px-2 py-2 sm:px-3.5 sm:py-1.5 rounded-xl sm:rounded-2xl text-[11px] sm:text-xs font-mono font-black transition-all cursor-pointer border-2 border-[#0f172a] w-full sm:w-auto shrink-0 ${
-                    selectedCategory === cat.id
+                  className={`flex items-center justify-center gap-1.5 px-2 py-2 sm:px-3.5 sm:py-1.5 rounded-xl sm:rounded-2xl text-[11px] sm:text-xs font-mono font-black transition-all cursor-pointer border-2 border-[#0f172a] w-full sm:w-auto shrink-0 ${selectedCategory === cat.id
                       ? 'bg-[#0284c7] text-white shadow-[2px_2px_0px_#0f172a] sm:shadow-[3px_3px_0px_#0f172a] -translate-y-0.5'
                       : 'bg-[#fffdf5] hover:bg-[#fff9d4] text-[#0f172a] shadow-[1.5px_1.5px_0px_#0f172a] sm:shadow-[2px_2px_0px_#0f172a]'
-                  }`}
+                    }`}
                 >
                   <span className="sm:hidden">{shortLabel}</span>
                   <span className="hidden sm:inline">{cat.label}</span>
                   <span
-                    className={`text-[9px] sm:text-[10px] px-1.5 py-0.2 rounded-full font-bold ${
-                      selectedCategory === cat.id
+                    className={`text-[9px] sm:text-[10px] px-1.5 py-0.2 rounded-full font-bold ${selectedCategory === cat.id
                         ? 'bg-white/30 text-white'
                         : 'bg-[#fff9d4] text-[#0f172a] border border-[#0f172a]/40'
-                    }`}
+                      }`}
                   >
                     {cat.count}
                   </span>
@@ -113,11 +111,10 @@ export const FilteredProjectDock: React.FC<FilteredProjectDockProps> = ({
                 key={project.id}
                 type="button"
                 onClick={() => setActiveProjectId(project.id)}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl border-2 border-[#0f172a] text-xs font-mono transition-all shrink-0 whitespace-nowrap cursor-pointer ${
-                  isSelected
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl border-2 border-[#0f172a] text-xs font-mono transition-all shrink-0 whitespace-nowrap cursor-pointer ${isSelected
                     ? 'bg-[#fde047] text-[#0f172a] shadow-[2.5px_2.5px_0px_#0f172a] font-black -translate-y-0.5'
                     : 'bg-[#fffdf5]/95 hover:bg-[#fff9d4] text-[#0f172a] shadow-[1.5px_1.5px_0px_#0f172a] font-bold'
-                }`}
+                  }`}
               >
                 <span className="text-[10px] font-black px-1.5 py-0.2 rounded bg-[#0f172a]/10">
                   0{idx + 1}
@@ -146,11 +143,10 @@ export const FilteredProjectDock: React.FC<FilteredProjectDockProps> = ({
                 key={project.id}
                 whileHover={{ x: 4 }}
                 onClick={() => setActiveProjectId(project.id)}
-                className={`p-3 sm:p-3.5 rounded-[20px] border-2 border-[#0f172a] cursor-pointer transition-all duration-200 ${
-                  isSelected
+                className={`p-3 sm:p-3.5 rounded-[20px] border-2 border-[#0f172a] cursor-pointer transition-all duration-200 ${isSelected
                     ? 'bg-[#fde047] shadow-[4px_4px_0px_#0f172a] -translate-y-0.5'
                     : 'bg-[#fffdf5]/95 hover:bg-[#fff9d4] shadow-[2px_2px_0px_#0f172a]'
-                }`}
+                  }`}
               >
                 <div className="flex items-center justify-between gap-2 mb-1">
                   <div className="flex items-center gap-2">
@@ -188,9 +184,8 @@ export const FilteredProjectDock: React.FC<FilteredProjectDockProps> = ({
                   </div>
 
                   <div
-                    className={`w-6 h-6 rounded-lg flex items-center justify-center border border-[#0f172a] transition-transform ${
-                      isSelected ? 'bg-[#0284c7] text-white rotate-90' : 'bg-[#fffdf5] text-[#0f172a]'
-                    }`}
+                    className={`w-6 h-6 rounded-lg flex items-center justify-center border border-[#0f172a] transition-transform ${isSelected ? 'bg-[#0284c7] text-white rotate-90' : 'bg-[#fffdf5] text-[#0f172a]'
+                      }`}
                   >
                     <ChevronRight className="w-3.5 h-3.5" />
                   </div>
