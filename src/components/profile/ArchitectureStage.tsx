@@ -68,7 +68,7 @@ export const ArchitectureStage: React.FC<ArchitectureStageProps> = ({ isFlooded 
     id: 'web',
     icon: <Code2 className="w-5 h-5 text-[#0284c7]" />,
     title: 'Frontend Web Development',
-    subtitle: 'Modern Web, Cloud Services & Motion Design',
+    subtitle: 'Modern Web & Motion Design',
     desc: 'Fokus merancang dan mengembangkan antarmuka web modern yang responsif, interaktif, dan kreatif. Terbiasa membangun aplikasi web interaktif, integrasi database & otentikasi cloud, automasi deployment web, serta kreasi visual motion dan video editing untuk antarmuka digital yang memukau.'
   };
 
@@ -167,9 +167,6 @@ export const ArchitectureStage: React.FC<ArchitectureStageProps> = ({ isFlooded 
           className="flex items-center justify-between p-3 px-4 rounded-xl bg-[#0284c7] text-white shadow-md"
         >
           <div className="flex items-center gap-2.5">
-            <span className="text-xs font-mono font-bold px-2.5 py-0.5 rounded-lg bg-white/20 text-white shadow-xs">
-              01 WEB
-            </span>
             <span className="text-xs sm:text-sm font-bold tracking-wide">
               FRONTEND WEB DEVELOPMENT
             </span>
@@ -195,9 +192,6 @@ export const ArchitectureStage: React.FC<ArchitectureStageProps> = ({ isFlooded 
                   {webPillar.icon}
                 </div>
                 <div>
-                  <span className="text-xs font-mono font-bold text-[#8c6239]">
-                    01 // {webPillar.subtitle}
-                  </span>
                   <h3 className="text-xl sm:text-2xl font-black text-[#0f172a] mt-0.5">
                     {webPillar.title}
                   </h3>
@@ -219,7 +213,7 @@ export const ArchitectureStage: React.FC<ArchitectureStageProps> = ({ isFlooded 
                 Arahkan kursor untuk melihat nama
               </span>
             </div>
-            
+
             {/* Tech Stack Icons Grid */}
             <div className="flex flex-wrap gap-2.5 sm:gap-3 items-center">
               {techLogos.map((tech) => (
@@ -260,10 +254,10 @@ export const ArchitectureStage: React.FC<ArchitectureStageProps> = ({ isFlooded 
           className="p-4 rounded-2xl bg-[#fffdf5] border border-[#e8dbc0] shadow-sm"
         >
           <span className="text-xs font-bold text-[#0f172a] block">
-            Clean Architecture
+            Responsive Design
           </span>
           <p className="text-[11px] text-[#64748b] mt-1 leading-relaxed">
-            Struktur komponen terorganisir dengan pemisahan dependensi, custom hooks, dan modularitas UI tinggi.
+            Membangun tampilan website yang responsif dan nyaman digunakan di berbagai ukuran perangkat.
           </p>
         </motion.div>
 
@@ -277,10 +271,10 @@ export const ArchitectureStage: React.FC<ArchitectureStageProps> = ({ isFlooded 
           className="p-4 rounded-2xl bg-[#fffdf5] border border-[#e8dbc0] shadow-sm"
         >
           <span className="text-xs font-bold text-[#0f172a] block">
-            Type-Safe Contracts
+            Interactive UI
           </span>
           <p className="text-[11px] text-[#64748b] mt-1 leading-relaxed">
-            Keamanan tipe penuh dengan TypeScript untuk props komponen, antarmuka data, dan integrasi API.
+            Membuat antarmuka yang interaktif dengan animasi, transisi, dan interaksi yang membuat website lebih hidup.
           </p>
         </motion.div>
 
@@ -294,10 +288,10 @@ export const ArchitectureStage: React.FC<ArchitectureStageProps> = ({ isFlooded 
           className="p-4 rounded-2xl bg-[#fffdf5] border border-[#e8dbc0] shadow-sm"
         >
           <span className="text-xs font-bold text-[#0f172a] block">
-            Responsive &amp; Fluid UI
+            Clean & Modern Interface
           </span>
           <p className="text-[11px] text-[#64748b] mt-1 leading-relaxed">
-            Pengalaman antarmuka adaptif di berbagai layar, interaksi mikro halus, dan performa rendering web.
+            Merancang tampilan yang rapi, modern, konsisten, dan mudah dipahami oleh pengguna.
           </p>
         </motion.div>
       </div>

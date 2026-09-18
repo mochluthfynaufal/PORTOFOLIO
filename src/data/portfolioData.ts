@@ -3,7 +3,7 @@ import type { ProfileData, Project, TechItem, ExperienceItem } from '../types/po
 export const profileData: ProfileData = {
   name: 'Moch Luthfy Naufal',
   tagline: 'Frontend Web Developer',
-  education: 'Teknik Informatika (S1) • Universitas Widyatama',
+  education: 'SMK Wikrama Bogor | Software Developer',
   status: 'Available for Engineering Roles & Projects',
   bio: 'Informatics engineering undergraduate focused on building modern, responsive, and performant web interfaces with clean component architecture and reactive design.',
   experienceStart: 'Active Developer',

@@ -18,19 +18,19 @@ export const ProfilePhotoCard: React.FC<ProfilePhotoCardProps> = ({ isFlooded })
       animate={
         isFlooded
           ? {
-              rotate: isMobile ? -5 : -24,
-              x: isMobile ? 0 : -32,
-              y: isMobile ? 20 : 70,
-              scale: isMobile ? 0.98 : 0.94,
-              transition: { type: 'spring', stiffness: 160, damping: 16 }
-            }
+            rotate: isMobile ? -5 : -24,
+            x: isMobile ? 0 : -32,
+            y: isMobile ? 20 : 70,
+            scale: isMobile ? 0.98 : 0.94,
+            transition: { type: 'spring', stiffness: 160, damping: 16 }
+          }
           : {
-              rotate: 0,
-              x: 0,
-              y: 0,
-              scale: 1,
-              transition: { type: 'spring', stiffness: 260, damping: 18 }
-            }
+            rotate: 0,
+            x: 0,
+            y: 0,
+            scale: 1,
+            transition: { type: 'spring', stiffness: 260, damping: 18 }
+          }
       }
       className="relative w-full flex flex-col items-center lg:items-start gap-6"
     >
@@ -60,11 +60,6 @@ export const ProfilePhotoCard: React.FC<ProfilePhotoCardProps> = ({ isFlooded })
             </div>
           </div>
         </div>
-
-        <div className="mt-3 px-2 flex items-center justify-between text-[11px] font-mono text-[#8c6239]">
-          <span>FOTO PROFIL</span>
-          <span>ID // MOCH LUTHFY NAUFAL</span>
-        </div>
       </div>
 
       {/* Location & Operating Environment */}
@@ -76,7 +71,7 @@ export const ProfilePhotoCard: React.FC<ProfilePhotoCardProps> = ({ isFlooded })
           <MapPin className="w-4 h-4 text-[#8c6239]" />
           <span>Indonesia</span>
         </div>
-        <span className="text-[#0284c7] font-bold">Frontend Specialist</span>
+        <span className="text-[#0284c7] font-bold">Web Developer</span>
       </motion.div>
     </motion.div>
   );
