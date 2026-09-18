@@ -69,9 +69,9 @@ export const ProfilePhotoCard: React.FC<ProfilePhotoCardProps> = ({ isFlooded })
       >
         <div className="flex items-center gap-2">
           <MapPin className="w-4 h-4 text-[#8c6239]" />
-          <span>Indonesia</span>
+          <span>Jawa Barat</span>
         </div>
-        <span className="text-[#0284c7] font-bold">Web Developer</span>
+        <span className="text-[#0284c7] font-bold">Bogor East</span>
       </motion.div>
     </motion.div>
   );

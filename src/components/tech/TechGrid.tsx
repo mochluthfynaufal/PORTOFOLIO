@@ -27,11 +27,11 @@ export const TechGrid: React.FC<TechGridProps> = ({ onOpenProject }) => {
     setSelectedTech(null);
 
     // automatically shift inspection layer to the primary active layer for that domain
-    if (domain === 'web' || domain === 'mobile') {
+    if (domain === 'web') {
       setSelectedLayer('client');
     } else if (domain === 'backend') {
       setSelectedLayer('backend');
-    } else if (domain === 'devops') {
+    } else if (domain === 'devops' || domain === 'creative') {
       setSelectedLayer('devops');
     }
   };
@@ -72,7 +72,7 @@ export const TechGrid: React.FC<TechGridProps> = ({ onOpenProject }) => {
                 Tech Stack & Tools
               </h2>
               <p className="text-sm sm:text-base font-medium text-[#475569] mt-2 max-w-2xl leading-relaxed">
-                Teknologi dan tools yang saya gunakan untuk membangun aplikasi web dan mobile.
+                Teknologi dan tools yang saya gunakan untuk merancang dan membangun antarmuka web modern.
               </p>
             </div>
 
@@ -110,7 +110,7 @@ export const TechGrid: React.FC<TechGridProps> = ({ onOpenProject }) => {
               stepNumber="01"
               title="Frontend & Web"
               subtitle="Client UI"
-              roleDescription="Pengembangan antarmuka web modern dan aplikasi mobile cross-platform."
+              roleDescription="Pengembangan antarmuka web modern yang responsif, modular, dan interaktif."
               techItems={clientTech}
               activeDomain={activeDomain}
               selectedTech={selectedTech}
@@ -153,9 +153,9 @@ export const TechGrid: React.FC<TechGridProps> = ({ onOpenProject }) => {
             <PipelineNodeLayer
               layerId="devops"
               stepNumber="04"
-              title="DevOps & Tools"
+              title="Tools & Workflow"
               subtitle="Environment"
-              roleDescription="Sistem operasi Linux, kontainer Docker, dan deployment."
+              roleDescription="Workflow development modern, version control Git/GitHub, dan deployment."
               techItems={devopsTech}
               activeDomain={activeDomain}
               selectedTech={selectedTech}

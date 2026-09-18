@@ -40,7 +40,8 @@ export const OceanHeroCanvas = forwardRef<OceanHeroHandle, { className?: string 
       const x = clientX - rect.left;
       const y = clientY - rect.top;
 
-      if (y > rect.height * 0.80) return;
+      // Jangan sampai ke area pasir pantai
+      if (y >= rect.height * 0.66) return;
 
       ripplesRef.current.push({
         x,
@@ -84,7 +85,8 @@ export const OceanHeroCanvas = forwardRef<OceanHeroHandle, { className?: string 
       const x = clientX - rect.left;
       const y = clientY - rect.top;
 
-      if (y > rect.height * 0.80) return;
+      // Jangan sampai ke area pasir pantai
+      if (y >= rect.height * 0.66) return;
 
       ripplesRef.current.push({
         x,
@@ -296,17 +298,10 @@ export const OceanHeroCanvas = forwardRef<OceanHeroHandle, { className?: string 
       }
     };
 
-    const handlePointerDown = (e: React.PointerEvent<HTMLCanvasElement>) => {
-      // Hanya klik kiri / tap (bukan drag)
-      if (e.button !== undefined && e.button !== 0) return;
-      triggerSplash(e.clientX, e.clientY, 1.4);
-    };
-
     return (
       <canvas
         ref={canvasRef}
         onMouseMove={handleMouseMove}
-        onPointerDown={handlePointerDown}
         className={`w-full h-full block cursor-pointer select-none ${className}`}
       />
     );

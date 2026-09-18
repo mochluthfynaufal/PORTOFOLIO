@@ -155,9 +155,6 @@ export const EditorialProfile: React.FC = () => {
           className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 sm:pb-14 border-b border-[#e2d3b3]"
         >
           <div className="max-w-2xl">
-            <span className="text-xs font-mono font-bold uppercase tracking-[0.25em] text-[#8c6239] block mb-2">
-              Profil &amp; Keahlian
-            </span>
             <h2 className="text-3xl sm:text-5xl font-black text-[#0f172a] tracking-tight leading-[1.08]">
               Frontend Web Developer
             </h2>
@@ -170,10 +167,6 @@ export const EditorialProfile: React.FC = () => {
               onTriggerFlood={handleTriggerFlood}
               onTriggerRebuild={handleTriggerRebuild}
             />
-
-            <p className="max-w-xs text-xs text-[#475569] leading-relaxed">
-              Berpengalaman mengembangkan antarmuka web modern yang responsif, interaktif, arsitektur komponen modular, dan performa tinggi.
-            </p>
           </div>
         </motion.div>
 

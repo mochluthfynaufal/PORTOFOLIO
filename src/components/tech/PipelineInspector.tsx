@@ -11,45 +11,50 @@ import {
 } from 'lucide-react';
 import {
   SiReact,
-  SiNextdotjs,
-  SiTypescript,
   SiJavascript,
+  SiTypescript,
   SiTailwindcss,
-  SiFlutter,
-  SiLaravel,
+  SiBootstrap,
+  SiHtml5,
+  SiCss,
+  SiPhp,
   SiNodedotjs,
   SiMysql,
-  SiPostgresql,
   SiSupabase,
-  SiFirebase,
-  SiPrisma,
-  SiDocker,
-  SiLinux,
+  SiFigma,
   SiGit,
+  SiGithub,
+  SiNpm,
+  SiNetlify,
   SiVercel
 } from '@icons-pack/react-simple-icons';
+import { VSCodeLogo, CapCutLogo, AlightMotionLogo, CanvaLogo } from '../common/BrandIcons';
 import type { TechItem, TechLayer } from '../../types/portfolio';
 import { projectsData } from '../../data/portfolioData';
 import type { FlowDomainId } from './PipelineFlowPresets';
 
 const iconMap: Record<string, React.FC<{ size?: number; color?: string; className?: string }>> = {
-  react: SiReact,
-  nextdotjs: SiNextdotjs,
-  typescript: SiTypescript,
+  html5: SiHtml5,
+  css3: SiCss,
   javascript: SiJavascript,
+  typescript: SiTypescript,
   tailwindcss: SiTailwindcss,
-  flutter: SiFlutter,
-  laravel: SiLaravel,
+  bootstrap: SiBootstrap,
+  react: SiReact,
+  php: SiPhp,
   nodejs: SiNodedotjs,
-  mysql: SiMysql,
-  postgresql: SiPostgresql,
   supabase: SiSupabase,
-  firebase: SiFirebase,
-  prisma: SiPrisma,
-  docker: SiDocker,
-  linux: SiLinux,
+  mysql: SiMysql,
+  figma: SiFigma,
+  canva: CanvaLogo,
   git: SiGit,
-  vercel: SiVercel
+  github: SiGithub,
+  vscode: VSCodeLogo,
+  npm: SiNpm,
+  netlify: SiNetlify,
+  vercel: SiVercel,
+  capcut: CapCutLogo,
+  alightmotion: AlightMotionLogo
 };
 
 interface PipelineInspectorProps {
@@ -72,51 +77,51 @@ const layerDetailsMap: Record<
 > = {
   client: {
     title: 'Frontend & Web Client',
-    subtitle: 'Web & Mobile',
+    subtitle: 'Web UI & Interactivity',
     description:
-      'Pengembangan antarmuka web dan mobile menggunakan React, TypeScript, dan Flutter dengan fokus pada interaktivitas dan performa yang responsif.',
+      'Pengembangan antarmuka web modern menggunakan React, JavaScript, Tailwind CSS, dan Bootstrap dengan fokus pada interaktivitas responsif dan pengalaman pengguna yang halus.',
     guarantees: [
-      'Type-safe props & contracts',
-      'Aplikasi Android & iOS',
-      'Desain responsif modern'
+      'Komponen UI modular & reaktif',
+      'Desain responsif multi-device',
+      'Animasi & transisi halus'
     ],
-    role: 'Frontend & Mobile'
+    role: 'Frontend Web'
   },
   backend: {
     title: 'Backend & Server',
-    subtitle: 'Server & API',
+    subtitle: 'Server & REST API',
     description:
-      'Pengembangan arsitektur backend menggunakan Laravel dan Node.js untuk menangani REST API, routing, dan komunikasi data real-time.',
+      'Pengembangan backend menggunakan PHP dan Node.js untuk menangani logika server-side, routing, dan integrasi API terstruktur.',
     guarantees: [
-      'Penanganan transaksi database',
-      'Komunikasi WebSockets',
-      'Otentikasi aman & API tokens'
+      'REST API modular & terstruktur',
+      'Validasi data & sanitasi',
+      'Autentikasi & session aman'
     ],
     role: 'Backend Engineering'
   },
   database: {
-    title: 'Database & Penyimpanan',
-    subtitle: 'Relational & NoSQL',
+    title: 'Database & Cloud Storage',
+    subtitle: 'Cloud Postgres & MySQL',
     description:
-      'Pengelolaan basis data relasional PostgreSQL & MySQL, serta database cloud Firestore dan Supabase dengan sinkronisasi real-time.',
+      'Pengelolaan basis data relasional MySQL dan database cloud Supabase lengkap dengan autentikasi aman dan sinkronisasi data real-time.',
     guarantees: [
-      'Migrasi skema via Prisma',
-      'Sinkronisasi real-time NoSQL',
-      'Query terindeks dan teroptimasi'
+      'Supabase Auth & Row-Level Security',
+      'Skema relasional ACID MySQL',
+      'Kueri terindeks dan teroptimasi'
     ],
     role: 'Database & Storage'
   },
   devops: {
-    title: 'DevOps & Lingkungan Kerja',
-    subtitle: 'Linux & Deployment',
+    title: 'Tools & Workflow',
+    subtitle: 'Version Control & Creative Tools',
     description:
-      'Alur kerja pengembangan berbasis sistem operasi Linux, isolasi aplikasi dengan Docker, manajemen kode dengan Git, dan hosting edge Vercel.',
+      'Alur kerja pengembangan modern dengan VS Code, npm, version control Git/GitHub, hosting Netlify, serta kreasi visual CapCut dan Alight Motion.',
     guarantees: [
-      'Lingkungan kontainer Docker',
-      'Branching & version control Git',
-      'Automasi terminal Unix'
+      'Branching & version control Git/GitHub',
+      'Automasi hosting edge Netlify',
+      'Produksi motion & video kreatif'
     ],
-    role: 'DevOps & Tools'
+    role: 'Tools & Workflow'
   }
 };
 

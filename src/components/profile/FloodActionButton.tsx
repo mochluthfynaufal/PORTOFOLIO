@@ -31,7 +31,7 @@ export const FloodActionButton: React.FC<FloodActionButtonProps> = ({
             title="Sapu konten dengan ombak besar"
           >
             <Waves className="w-4 h-4 group-hover:rotate-12 transition-transform" />
-            <span>Flood Beach</span>
+            <span>HANCURKANNNNNNNNN</span>
           </motion.button>
         )}
 
@@ -45,13 +45,12 @@ export const FloodActionButton: React.FC<FloodActionButtonProps> = ({
             type="button"
             disabled={floodState === 'flooding'}
             onClick={onTriggerRebuild}
-            className={`flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-[#f59e0b] hover:bg-[#d97706] text-white text-xs font-mono font-bold shadow-lg shadow-[#f59e0b]/25 transition-all cursor-pointer hover:scale-105 active:scale-95 ${
-              floodState === 'flooding' ? 'opacity-85 cursor-wait' : ''
-            }`}
+            className={`flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-[#f59e0b] hover:bg-[#d97706] text-white text-xs font-mono font-bold shadow-lg shadow-[#f59e0b]/25 transition-all cursor-pointer hover:scale-105 active:scale-95 ${floodState === 'flooding' ? 'opacity-85 cursor-wait' : ''
+              }`}
             title="Tata ulang dan bangun kembali pasir pantai"
           >
             <Wrench className="w-4 h-4" />
-            <span>Rebuild Sand</span>
+            <span>PERBAIKIIIII</span>
           </motion.button>
         )}
 

@@ -2,44 +2,49 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import {
   SiReact,
-  SiNextdotjs,
-  SiTypescript,
   SiJavascript,
+  SiTypescript,
   SiTailwindcss,
-  SiFlutter,
-  SiLaravel,
+  SiBootstrap,
+  SiHtml5,
+  SiCss,
+  SiPhp,
   SiNodedotjs,
   SiMysql,
-  SiPostgresql,
   SiSupabase,
-  SiFirebase,
-  SiPrisma,
-  SiDocker,
-  SiLinux,
+  SiFigma,
   SiGit,
+  SiGithub,
+  SiNpm,
+  SiNetlify,
   SiVercel
 } from '@icons-pack/react-simple-icons';
+import { VSCodeLogo, CapCutLogo, AlightMotionLogo, CanvaLogo } from '../common/BrandIcons';
 import type { TechItem, TechLayer } from '../../types/portfolio';
 import type { FlowDomainId } from './PipelineFlowPresets';
 
 const iconMap: Record<string, React.FC<{ size?: number; color?: string; className?: string }>> = {
-  react: SiReact,
-  nextdotjs: SiNextdotjs,
-  typescript: SiTypescript,
+  html5: SiHtml5,
+  css3: SiCss,
   javascript: SiJavascript,
+  typescript: SiTypescript,
   tailwindcss: SiTailwindcss,
-  flutter: SiFlutter,
-  laravel: SiLaravel,
+  bootstrap: SiBootstrap,
+  react: SiReact,
+  php: SiPhp,
   nodejs: SiNodedotjs,
-  mysql: SiMysql,
-  postgresql: SiPostgresql,
   supabase: SiSupabase,
-  firebase: SiFirebase,
-  prisma: SiPrisma,
-  docker: SiDocker,
-  linux: SiLinux,
+  mysql: SiMysql,
+  figma: SiFigma,
+  canva: CanvaLogo,
   git: SiGit,
-  vercel: SiVercel
+  github: SiGithub,
+  vscode: VSCodeLogo,
+  npm: SiNpm,
+  netlify: SiNetlify,
+  vercel: SiVercel,
+  capcut: CapCutLogo,
+  alightmotion: AlightMotionLogo
 };
 
 interface PipelineNodeLayerProps {
@@ -73,9 +78,9 @@ export const PipelineNodeLayer: React.FC<PipelineNodeLayerProps> = ({
   const isLayerActiveInDomain =
     activeDomain === 'all' ||
     (activeDomain === 'web' && layerId === 'client') ||
-    (activeDomain === 'mobile' && layerId === 'client') ||
     (activeDomain === 'backend' && (layerId === 'backend' || layerId === 'database')) ||
-    (activeDomain === 'devops' && layerId === 'devops');
+    (activeDomain === 'devops' && layerId === 'devops') ||
+    (activeDomain === 'creative' && layerId === 'devops');
 
   const handleInspectClick = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -168,9 +173,9 @@ export const PipelineNodeLayer: React.FC<PipelineNodeLayerProps> = ({
             const isToolActive =
               activeDomain === 'all' ||
               (activeDomain === 'web' && tech.category === 'frontend') ||
-              (activeDomain === 'mobile' && tech.category === 'mobile') ||
               (activeDomain === 'backend' && tech.category === 'backend') ||
-              (activeDomain === 'devops' && tech.category === 'tools');
+              (activeDomain === 'devops' && (tech.category === 'tools' || tech.category === 'creative')) ||
+              (activeDomain === 'creative' && tech.category === 'creative');
 
             const isToolSelected = isLayerActiveInDomain && selectedTech?.name === tech.name;
 

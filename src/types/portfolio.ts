@@ -28,7 +28,7 @@ export type TechLayer = 'client' | 'backend' | 'database' | 'devops';
 
 export interface TechItem {
   name: string;
-  category: 'frontend' | 'mobile' | 'backend' | 'tools';
+  category: 'frontend' | 'mobile' | 'backend' | 'tools' | 'creative';
   layer: TechLayer;
   iconKey: string;
   color: string;

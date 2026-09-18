@@ -1,7 +1,7 @@
 import React from 'react';
-import { Layers, Globe, Smartphone, Server, Terminal, Lock } from 'lucide-react';
+import { Layers, Globe, Server, Terminal, Sparkles, Lock } from 'lucide-react';
 
-export type FlowDomainId = 'all' | 'web' | 'mobile' | 'backend' | 'devops' | 'cybersecurity';
+export type FlowDomainId = 'all' | 'web' | 'mobile' | 'backend' | 'devops' | 'creative' | 'cybersecurity';
 
 interface PipelineFlowPresetsProps {
   activeDomain: FlowDomainId;
@@ -32,12 +32,6 @@ export const PipelineFlowPresets: React.FC<PipelineFlowPresetsProps> = ({
       tag: 'Web'
     },
     {
-      id: 'mobile',
-      label: 'Mobile App',
-      icon: Smartphone,
-      tag: 'Mobile'
-    },
-    {
       id: 'backend',
       label: 'Backend & DB',
       icon: Server,
@@ -45,9 +39,15 @@ export const PipelineFlowPresets: React.FC<PipelineFlowPresetsProps> = ({
     },
     {
       id: 'devops',
-      label: 'DevOps & Linux',
+      label: 'Tools & Workflow',
       icon: Terminal,
-      tag: 'DevOps'
+      tag: 'Tools'
+    },
+    {
+      id: 'creative',
+      label: 'Creative & Motion',
+      icon: Sparkles,
+      tag: 'Media'
     },
     {
       id: 'cybersecurity',

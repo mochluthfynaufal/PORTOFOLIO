@@ -17,7 +17,7 @@ export const profileData: ProfileData = {
   ],
   contact: {
     email: 'naufalfii74@gmail.com',
-    github: 'https://github.com/naufalfii74-crypto',
+    github: 'https://github.com/mochluthfynaufal',
     linkedin: 'https://linkedin.com/in/mochluthfynaufal',
     location: 'Indonesia'
   }
@@ -26,54 +26,24 @@ export const profileData: ProfileData = {
 export const techStackData: TechItem[] = [
   // client interface layer
   {
-    name: 'TypeScript',
+    name: 'HTML5',
     category: 'frontend',
     layer: 'client',
-    iconKey: 'typescript',
-    color: '#3178C6',
-    roleTag: 'Type Contracts',
-    usageContext: 'Type-safe contracts across full-stack applications and component props',
-    projectLinks: ['cimart', 'kalorin-ai']
+    iconKey: 'html5',
+    color: '#E34F26',
+    roleTag: 'Markup Structure',
+    usageContext: 'Struktur semantik dokumen web, aksesibilitas modern, dan fondasi halaman web',
+    projectLinks: ['cimart', 'villanakey', 'kalorin-ai']
   },
   {
-    name: 'React',
+    name: 'CSS3',
     category: 'frontend',
     layer: 'client',
-    iconKey: 'react',
-    color: '#0284c7',
-    roleTag: 'Component UI',
-    usageContext: 'Component-driven UI, state management, custom hooks, and interactive flows',
-    projectLinks: ['cimart', 'kalorin-ai']
-  },
-  {
-    name: 'Next.js',
-    category: 'frontend',
-    layer: 'client',
-    iconKey: 'nextdotjs',
-    color: '#0f172a',
-    roleTag: 'App Framework',
-    usageContext: 'Server-side rendering, static generation, and edge routing',
-    projectLinks: ['cimart']
-  },
-  {
-    name: 'Flutter',
-    category: 'mobile',
-    layer: 'client',
-    iconKey: 'flutter',
-    color: '#0284c7',
-    roleTag: 'Native Mobile',
-    usageContext: 'Cross-platform native mobile apps for iOS and Android with 60fps reactive UI',
-    projectLinks: ['villanakey']
-  },
-  {
-    name: 'Tailwind CSS v4',
-    category: 'frontend',
-    layer: 'client',
-    iconKey: 'tailwindcss',
-    color: '#06b6d4',
-    roleTag: 'Design Tokens',
-    usageContext: 'Modern utility-first styling, design tokens, and fluid responsive layouts',
-    projectLinks: ['cimart', 'kalorin-ai']
+    iconKey: 'css3',
+    color: '#1572B6',
+    roleTag: 'Styling & Layouts',
+    usageContext: 'Tata letak modern Flexbox & Grid, responsivitas multi-device, dan animasi CSS',
+    projectLinks: ['cimart', 'villanakey']
   },
   {
     name: 'JavaScript',
@@ -82,19 +52,59 @@ export const techStackData: TechItem[] = [
     iconKey: 'javascript',
     color: '#eab308',
     roleTag: 'Scripting Core',
-    usageContext: 'Core web scripting, DOM events, and asynchronous event loops',
+    usageContext: 'Core web scripting, interaktivitas DOM, async event loop, dan ES6+ modern',
+    projectLinks: ['cimart', 'villanakey', 'kalorin-ai']
+  },
+  {
+    name: 'TypeScript',
+    category: 'frontend',
+    layer: 'client',
+    iconKey: 'typescript',
+    color: '#3178C6',
+    roleTag: 'Type Contracts',
+    usageContext: 'Type-safe contracts across frontend applications, component props, and robust interfaces',
+    projectLinks: ['cimart', 'kalorin-ai']
+  },
+  {
+    name: 'Tailwind CSS',
+    category: 'frontend',
+    layer: 'client',
+    iconKey: 'tailwindcss',
+    color: '#06b6d4',
+    roleTag: 'Utility Styling',
+    usageContext: 'Modern utility-first styling, desain sistem konsisten, dan rapid UI prototyping',
+    projectLinks: ['cimart', 'kalorin-ai']
+  },
+  {
+    name: 'Bootstrap',
+    category: 'frontend',
+    layer: 'client',
+    iconKey: 'bootstrap',
+    color: '#7952B3',
+    roleTag: 'Component Framework',
+    usageContext: 'Grid sistem responsif cepat, komponen UI siap pakai, dan styling utilitas',
     projectLinks: ['cimart']
+  },
+  {
+    name: 'React',
+    category: 'frontend',
+    layer: 'client',
+    iconKey: 'react',
+    color: '#0284c7',
+    roleTag: 'Component UI',
+    usageContext: 'Komponen UI modular, reaktivitas state, custom hooks, dan alur interaktif SPA',
+    projectLinks: ['cimart', 'kalorin-ai']
   },
 
   // backend engine layer
   {
-    name: 'Laravel',
+    name: 'PHP',
     category: 'backend',
     layer: 'backend',
-    iconKey: 'laravel',
-    color: '#ef4444',
-    roleTag: 'MVC & REST Engine',
-    usageContext: 'Robust REST APIs, Inertia backend routing, authentication, and transaction handling',
+    iconKey: 'php',
+    color: '#777BB4',
+    roleTag: 'Server Scripting',
+    usageContext: 'Pengembangan logika server-side, integrasi backend dinamis, dan pengolahan REST API',
     projectLinks: ['cimart']
   },
   {
@@ -104,21 +114,11 @@ export const techStackData: TechItem[] = [
     iconKey: 'nodejs',
     color: '#22c55e',
     roleTag: 'Server Runtime',
-    usageContext: 'High-throughput microservices, real-time WebSockets, and build automation tooling',
+    usageContext: 'Runtime JavaScript server-side, tooling automasi, dan servis backend modern',
     projectLinks: ['kalorin-ai']
   },
 
   // database and cloud persistence layer
-  {
-    name: 'PostgreSQL',
-    category: 'backend',
-    layer: 'database',
-    iconKey: 'postgresql',
-    color: '#2563eb',
-    roleTag: 'Relational Core',
-    usageContext: 'Relational data modeling, complex queries, indexing, and transactional integrity',
-    projectLinks: ['kalorin-ai']
-  },
   {
     name: 'Supabase',
     category: 'backend',
@@ -126,7 +126,7 @@ export const techStackData: TechItem[] = [
     iconKey: 'supabase',
     color: '#10b981',
     roleTag: 'Cloud Postgres & Auth',
-    usageContext: 'Managed Postgres backend, row-level security policies, real-time subscriptions, and auth',
+    usageContext: 'Managed Postgres backend, row-level security policies, real-time subscriptions, dan auth',
     projectLinks: ['kalorin-ai']
   },
   {
@@ -136,50 +136,30 @@ export const techStackData: TechItem[] = [
     iconKey: 'mysql',
     color: '#0284c7',
     roleTag: 'Transactional DB',
-    usageContext: 'E-commerce relational database schemas, ACID transactions, and optimized indexing',
+    usageContext: 'Penyimpanan data relasional terstruktur, skema transaksi ACID, dan optimasi query',
     projectLinks: ['cimart']
   },
-  {
-    name: 'Firebase',
-    category: 'backend',
-    layer: 'database',
-    iconKey: 'firebase',
-    color: '#f59e0b',
-    roleTag: 'NoSQL & Real-Time Sync',
-    usageContext: 'Cloud Firestore real-time calendar syncing, FCM push notifications, and Auth',
-    projectLinks: ['villanakey', 'cimart']
-  },
-  {
-    name: 'Prisma ORM',
-    category: 'backend',
-    layer: 'database',
-    iconKey: 'prisma',
-    color: '#6366f1',
-    roleTag: 'Type-Safe ORM',
-    usageContext: 'Type-safe database migrations, declarative schema modeling, and optimized queries',
-    projectLinks: ['kalorin-ai']
-  },
 
-  // infrastructure and devops layer
+  // tools and workflow layer
   {
-    name: 'Linux',
-    category: 'tools',
+    name: 'Figma',
+    category: 'creative',
     layer: 'devops',
-    iconKey: 'linux',
-    color: '#eab308',
-    roleTag: 'System OS',
-    usageContext: 'Primary Unix environment, Bash scripting, system service management, and workflow',
+    iconKey: 'figma',
+    color: '#F24E1E',
+    roleTag: 'UI/UX Design',
+    usageContext: 'Wireframing, perancangan prototipe antarmuka UI/UX modern, dan desain sistem kolaboratif',
     projectLinks: ['cimart', 'villanakey', 'kalorin-ai']
   },
   {
-    name: 'Docker',
-    category: 'tools',
+    name: 'Canva',
+    category: 'creative',
     layer: 'devops',
-    iconKey: 'docker',
-    color: '#0284c7',
-    roleTag: 'Containerization',
-    usageContext: 'Containerized deployment, multi-stage builds, and consistent staging environments',
-    projectLinks: ['cimart']
+    iconKey: 'canva',
+    color: '#00C4CC',
+    roleTag: 'Graphic Design',
+    usageContext: 'Desain grafis kreatif, aset visual media sosial, banner promosi, dan materi branding digital',
+    projectLinks: ['cimart', 'villanakey']
   },
   {
     name: 'Git',
@@ -188,8 +168,48 @@ export const techStackData: TechItem[] = [
     iconKey: 'git',
     color: '#f97316',
     roleTag: 'Version Control',
-    usageContext: 'Version control, feature branching workflows, code reviews, and CI/CD pipelines',
+    usageContext: 'Pelacakan revisi kode sumber, branching workflows terstruktur, dan manajemen commit',
     projectLinks: ['cimart', 'villanakey', 'kalorin-ai']
+  },
+  {
+    name: 'GitHub',
+    category: 'tools',
+    layer: 'devops',
+    iconKey: 'github',
+    color: '#181717',
+    roleTag: 'Repository & Collab',
+    usageContext: 'Hosting repository cloud, kolaborasi open source, tracking issues, dan sinkronisasi tim',
+    projectLinks: ['cimart', 'villanakey', 'kalorin-ai']
+  },
+  {
+    name: 'VS Code',
+    category: 'tools',
+    layer: 'devops',
+    iconKey: 'vscode',
+    color: '#007acc',
+    roleTag: 'Code Editor',
+    usageContext: 'Code editor utama dengan tooling ekstensi modern, debugging, dan integrasi terminal',
+    projectLinks: ['cimart', 'villanakey', 'kalorin-ai']
+  },
+  {
+    name: 'npm',
+    category: 'tools',
+    layer: 'devops',
+    iconKey: 'npm',
+    color: '#cb3837',
+    roleTag: 'Package Manager',
+    usageContext: 'Pengelolaan paket dependensi JavaScript, eksekusi build scripts, dan ekosistem open-source',
+    projectLinks: ['cimart', 'kalorin-ai']
+  },
+  {
+    name: 'Netlify',
+    category: 'tools',
+    layer: 'devops',
+    iconKey: 'netlify',
+    color: '#00c7b7',
+    roleTag: 'Edge Deployment',
+    usageContext: 'Continuous deployment dari Git, edge CDN global, serverless redirect, dan pratinjau cepat',
+    projectLinks: ['kalorin-ai', 'villanakey']
   },
   {
     name: 'Vercel',
@@ -198,8 +218,28 @@ export const techStackData: TechItem[] = [
     iconKey: 'vercel',
     color: '#0f172a',
     roleTag: 'Edge Deployment',
-    usageContext: 'Edge deployment, continuous integration, and global CDN delivery for web apps',
-    projectLinks: ['kalorin-ai']
+    usageContext: 'Deployment otomatis web modern, edge functions, DNS management, dan serverless global CDN',
+    projectLinks: ['cimart', 'kalorin-ai']
+  },
+  {
+    name: 'CapCut',
+    category: 'creative',
+    layer: 'devops',
+    iconKey: 'capcut',
+    color: '#0f172a',
+    roleTag: 'Video Production',
+    usageContext: 'Produksi dan editing video kreatif, transisi dinamis, serta konten visual media sosial',
+    projectLinks: ['cimart', 'villanakey']
+  },
+  {
+    name: 'Alight Motion',
+    category: 'creative',
+    layer: 'devops',
+    iconKey: 'alightmotion',
+    color: '#05faa8',
+    roleTag: 'Motion Graphics',
+    usageContext: 'Pembuatan animasi motion grafik halus, efek visual, keyframing, dan tipografi dinamis',
+    projectLinks: ['cimart']
   }
 ];
 
